@@ -13653,8 +13653,7 @@ Naive Predictor: [Accuracy score: 0.2478, F-score: 0.2917]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
-
+<h1 id="Answer:-"><strong>Answer: </strong><a class="anchor-link" href="#Answer:-">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -13884,56 +13883,6 @@ In the code block below, you will need to implement the following:</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># FIXME: remove this: scratchpad for next cell(for clf in ...)</span>
-
-<span class="c1"># TODO: Import the three supervised learning models from sklearn</span>
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">RandomForestClassifier</span> <span class="k">as</span> <span class="n">rfc</span>
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">AdaBoostClassifier</span> <span class="k">as</span> <span class="n">abc</span>
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">GradientBoostingClassifier</span> <span class="k">as</span> <span class="n">gbc</span>
-
-<span class="c1"># TODO: Initialize the three models</span>
-<span class="n">clf_A</span> <span class="o">=</span> <span class="n">rfc</span><span class="p">()</span>
-<span class="n">clf_B</span> <span class="o">=</span> <span class="n">abc</span><span class="p">()</span>
-<span class="n">clf_C</span> <span class="o">=</span> <span class="n">gbc</span><span class="p">()</span>
-
-<span class="c1"># TODO: Calculate the number of samples for 1%, 10%, and 100% of the training data</span>
-<span class="c1"># HINT: samples_100 is the entire training set i.e. len(y_train)</span>
-<span class="c1"># HINT: samples_10 is 10% of samples_100 (ensure to set the count of the values to be `int` and not `float`)</span>
-<span class="c1"># HINT: samples_1 is 1% of samples_100 (ensure to set the count of the values to be `int` and not `float`)</span>
-<span class="n">samples_100</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
-<span class="n">samples_10</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mf">0.1</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_train</span><span class="p">))</span>
-<span class="n">samples_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mf">0.01</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_train</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">, </span><span class="si">%d</span><span class="s2">, </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">samples_100</span><span class="p">,</span> <span class="n">samples_10</span><span class="p">,</span> <span class="n">samples_1</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>36177, 3617, 361
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -14206,8 +14155,7 @@ AdaBoostClassifier trained on 36177 samples.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the next cell we take the results from above and select only the data for 100% of the samples(via emacs macros)</p>
-
+<h1 id="In-the-next-few-cells-we-take-the-results-from-above-and-select-only-the-data-for-100%-of-the-samples(via-emacs-macros)">In the next few cells we take the results from above and select only the data for 100% of the samples(via emacs macros)<a class="anchor-link" href="#In-the-next-few-cells-we-take-the-results-from-above-and-select-only-the-data-for-100%-of-the-samples(via-emacs-macros)">&#182;</a></h1><h1 id="What-we're-going-for-is-to-find-the-top-4-classifiers-on-each-metric-and-then-see-if-there's-one-that's-in-the-top-for-on-all-or-at-least-most">What we're going for is to find the top 4 classifiers on each metric and then see if there's one that's in the top for on all or at least most<a class="anchor-link" href="#What-we're-going-for-is-to-find-the-top-4-classifiers-on-each-metric-and-then-see-if-there's-one-that's-in-the-top-for-on-all-or-at-least-most">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -14466,6 +14414,9 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
+<p>Note: all beta scores were calculated with the value beta = 0.5 as specified by CharityML.</p>
+<p>After looking at all the metrics on all the classifiers we decided to focus our attention on the top 4 classifiers according to each metric and see of there was a consistent or at least frequent winner to ensure that our initial choice of 3 did not exclude something wrongly. We limited our attention to the runs using 100% of the samples.</p>
+<p>Base on this we chose GradientBoostingClassifier even though it's #4 in predicition time since we have no guidance on an acceptable upper bound for prediction time and GBC does the best in the f-score metric on the test set.</p>
 
 </div>
 </div>
@@ -14488,6 +14439,8 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
+<p>In this discussion, "weak learners" might be analogized to baseball players. It's exceedingly rare to find one person with major league skills in pitching, first base, catching and outfield. But, we can for a sucessful team by getting stars at each position.</p>
+<p>Gradient boosting works by building a tree from "weak learners", calculating the "loss" and then adding another weak learner and measuring the loss again. If the loss increase, we throw that out and try a different one. So, if the error is visualized as a mountain we go generally downhill but may have to detour due to impassable terrain(or data) features.</p>
 
 </div>
 </div>
@@ -15031,18 +14984,21 @@ Final F-score on the testing data: 0.7510
 <th style="text-align:center">Metric</th>
 <th style="text-align:center">Unoptimized Model</th>
 <th style="text-align:center">Optimized Model</th>
+<th style="text-align:center">Naive Predictor</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:center">Accuracy Score</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td style="text-align:center">0.8630</td>
+<td style="text-align:center">0.8700</td>
+<td style="text-align:center">0.2478</td>
 </tr>
 <tr>
 <td style="text-align:center">F-score</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">EXAMPLE</td>
+<td style="text-align:center">0.7395</td>
+<td style="text-align:center">0.7510</td>
+<td style="text-align:center">0.2917</td>
 </tr>
 </tbody>
 </table>
@@ -15055,6 +15011,7 @@ Final F-score on the testing data: 0.7510
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
+<p>The improvement from Unoptimized to Optimized was 0.8% for accuracy and 1.5% for f-score. In a real customer scenario we would expect the statement of work to include the metrics which must be met and use that to decide if running on a cpu with many more cores would be justified to meet the specification. I limited the parameters used in the cv grid search to a set that could be tested in 10 minutes on a core i7.</p>
 
 </div>
 </div>
@@ -15083,8 +15040,24 @@ Final F-score on the testing data: 0.7510
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="@resume-(TODO:,-answer:,-FIXME:)---begin">@resume (TODO:, answer:, FIXME:) - begin<a class="anchor-link" href="#@resume-(TODO:,-answer:,-FIXME:)---begin">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="@resume-(TODO:,-answer:,-FIXME:)---end">@resume (TODO:, answer:, FIXME:) - end<a class="anchor-link" href="#@resume-(TODO:,-answer:,-FIXME:)---end">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -15207,7 +15180,7 @@ X_test_reduced = X_test[X_test.columns.values[(np.argsort(importances)[::-1])[:5
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import functionality for cloning a model</span>
@@ -15233,6 +15206,33 @@ X_test_reduced = X_test[X_test.columns.values[(np.argsort(importances)[::-1])[:5
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-f04904c3a409&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> 
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-red-fg"># Reduce the feature space</span>
+<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg"> </span>X_train_reduced <span class="ansi-blue-fg">=</span> X_train<span class="ansi-blue-fg">[</span>X_train<span class="ansi-blue-fg">.</span>columns<span class="ansi-blue-fg">.</span>values<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">(</span>np<span class="ansi-blue-fg">.</span>argsort<span class="ansi-blue-fg">(</span>importances<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-cyan-fg">5</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> X_test_reduced <span class="ansi-blue-fg">=</span> X_test<span class="ansi-blue-fg">[</span>X_test<span class="ansi-blue-fg">.</span>columns<span class="ansi-blue-fg">.</span>values<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">(</span>np<span class="ansi-blue-fg">.</span>argsort<span class="ansi-blue-fg">(</span>importances<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-cyan-fg">5</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">      7</span> 
+
+<span class="ansi-red-fg">NameError</span>: name &#39;X_train&#39; is not defined</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -15290,6 +15290,14 @@ X_test_reduced = X_test[X_test.columns.values[(np.argsort(importances)[::-1])[:5
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="move-@resume-from-top-to-bottom">move @resume from top to bottom<a class="anchor-link" href="#move-@resume-from-top-to-bottom">&#182;</a></h1><h1 id="delete-any-FIXME-or-scratch-code(re-run-after-every-deletion">delete any FIXME or scratch code(re-run after every deletion<a class="anchor-link" href="#delete-any-FIXME-or-scratch-code(re-run-after-every-deletion">&#182;</a></h1><h1 id="recheck-the-rubric">recheck the rubric<a class="anchor-link" href="#recheck-the-rubric">&#182;</a></h1>
+</div>
+</div>
 </div>
     </div>
   </div>
